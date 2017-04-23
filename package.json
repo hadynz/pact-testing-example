@@ -8,6 +8,7 @@
   "scripts": {
     "start": "node server",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack/webpack.production.config.js --progress --profile --colors",
+    "integration-test": "nightwatch",
     "test": "npm run eslint && npm run jscs",
     "eslint": "eslint .",
     "jscs": "jscs ."
@@ -23,6 +24,7 @@
     "babel-core": "^6.22.1",
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.3",
+    "chromedriver": "^2.29.0",
     "cross-env": "^1.0.7",
     "css-loader": "^0.19.0",
     "eslint": "^1.5.0",
@@ -32,6 +34,7 @@
     "html-webpack-plugin": "^1.6.1",
     "jscs": "^2.1.1",
     "json-loader": "^0.5.3",
+    "nightwatch": "^0.9.14",
     "postcss-loader": "^0.6.0",
     "rimraf": "^2.4.3",
     "stats-webpack-plugin": "^0.2.1",
