@@ -1,0 +1,12 @@
+# Node modules
+node_modules
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# IDE's
+.idea
+.vscode
