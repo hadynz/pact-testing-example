@@ -1,7 +1,7 @@
 {
   "name": "pact-testing-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example of using Pact Js for contract driven tests of a simple react application",
   "main": "server",
   "author": "Hady Osman",
   "license": "MIT",
