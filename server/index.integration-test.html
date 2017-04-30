@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+  <title>OMDb API React Example</title>
+
+  <script>
+    (function (open) {
+      XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+        const rewrittenUrl = url.replace('http://www.omdbapi.com', 'http://localhost:4012');
+        open.call(this, method, rewrittenUrl, async, user, pass);
+      };
+    })(XMLHttpRequest.prototype.open);
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
