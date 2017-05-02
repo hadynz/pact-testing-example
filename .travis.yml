@@ -1,21 +1,12 @@
 language: node_js
 node_js:
   - "node"
-env:
-  - CXX=g++-4.8
-addons:
-  firefox: "43.0"
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-      - google-chrome
-    packages:
-      - g++-4.8
-      - oracle-java8-set-default
-      - google-chrome-stable
 cache:
   directories:
     - node_modules
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install chromium-chromedriver
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
