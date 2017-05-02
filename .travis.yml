@@ -1,17 +1,18 @@
+os: linux
+node_js: node
 sudo: required
+env: DISPLAY=':99.0'
 dist: trusty
-language: node_js
-node_js:
-  - "node"
 cache:
   directories:
     - node_modules
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install chromium-chromedriver
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+  - sh -e /etc/init.d/xvfb start
 script:
   - npm run integration-test
