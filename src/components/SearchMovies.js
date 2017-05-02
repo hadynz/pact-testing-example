@@ -38,7 +38,7 @@ class SearchMovies extends Component {
         <div className="panel-heading">
           <h3 className="panel-title">Last Movie that you Watched</h3>
         </div>
-        <div className="panel-body">
+        <div className="panel-body" data-automation-id="movie-search">
           <div className="col-xs-4" >
             <div className="form-group">
               <label htmlFor="title">Search by Title</label>

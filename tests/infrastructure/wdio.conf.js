@@ -12,7 +12,7 @@ exports.config = {
   exclude: [],
   maxInstances: 1,
   capabilities: [
-    { browserName: 'chrome' }
+    { browserName: 'firefox' }
   ],
   services: ['selenium-standalone', 'webpack-dev-server'],
   reporters: ['spec'],

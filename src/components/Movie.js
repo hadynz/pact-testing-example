@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 const Movie = (props) => {
   return (
-    <div className="col-xs-4">
+    <div className="col-xs-4" data-automation-id="movie" data-meta-data={props.movie.title}>
       <img src={props.movie.image} />
       <h1>{props.movie.title} </h1>
       <p>{props.movie.director}</p>

@@ -77,6 +77,8 @@ module.exports = function steps() {
 
   this.Then(/^I expect that one movie result is returned$/, () => {
     browser.click('[data-automation-id=search-button]');
-    browser.pause(5000);
+    browser
+      .getAttribute('[data-automation-id=movie-search] [data-automation-id=movie]', 'data-meta-data')
+      .should.be.equal('Titanic1234');
   });
 };
