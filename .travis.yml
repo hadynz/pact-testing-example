@@ -1,4 +1,5 @@
 os: linux
+language: node_js
 node_js: node
 sudo: required
 env: DISPLAY=':99.0'
