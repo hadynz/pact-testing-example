@@ -6,7 +6,8 @@
   "author": "Hady Osman",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/config",
+    "build": "webpack --config ./webpack/config.dev --progress --profile --colors",
+    "start": "webpack-dev-server --config ./webpack/config.dev --progress --profile --colors",
     "eslint": "eslint .",
     "jscs": "jscs .",
     "integration-test": "node_modules/.bin/wdio ./tests/infrastructure/wdio.conf.js"

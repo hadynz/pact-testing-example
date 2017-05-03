@@ -21,7 +21,7 @@ script:
 # GitHub Pages Deployment
 deploy:
   provider: pages
-  local_dir: server
+  local_dir: dist
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
