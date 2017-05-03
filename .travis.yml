@@ -19,6 +19,8 @@ script:
   - npm run integration-test
 
 # GitHub Pages Deployment
+before_deploy:
+  - npm run build
 deploy:
   provider: pages
   local_dir: dist
