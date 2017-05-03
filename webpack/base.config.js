@@ -11,7 +11,7 @@ module.exports = template => ({
   output: {
     path: path.join(__dirname, '../dist/'),
     filename: '[name].js',
-    publicPath: '/'
+    publicPath: './'
   },
   devServer: {
     port: 3000,
