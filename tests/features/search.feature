@@ -6,5 +6,5 @@ Feature: Test movie search
         Given I open the movie application page
 
     Scenario: Searching for a movie
-        When  I search for the Titanic movie
-        Then  I expect that one movie result is returned
+        When  I search for a movie that is available in the movie api
+        Then  I expect that the matching movie result is returned
