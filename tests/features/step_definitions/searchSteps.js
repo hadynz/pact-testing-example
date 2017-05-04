@@ -1,5 +1,5 @@
 /* global browser */
-const pactProvider = require('../infrastructure/pactProvider');
+const pactProvider = require('../support/pactProvider');
 
 module.exports = function steps() {
   this.Given(/^I open the movie application page$/, () => {

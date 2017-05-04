@@ -1,7 +1,7 @@
 const chai = require('chai');
 
 const pactProvider = require('./pactProvider');
-const webpackConfig = require('../../webpack/webpack.test')();
+const webpackConfig = require('../../../webpack/webpack.test')();
 
 const WEBPACK_DEV_SERVER_PORT = 3000;
 
@@ -29,7 +29,7 @@ exports.config = {
   webpackPort: WEBPACK_DEV_SERVER_PORT,
   framework: 'cucumber',
   cucumberOpts: {
-    require: ['./tests/steps'], // <string[]> (file/dir) require files before executing features
+    require: ['./tests/features/step_definitions'], // <string[]> (file/dir) require files before executing features
     backtrace: false,   // <boolean> show full backtrace for errors
     compiler: [],       // <string[]> ('extension:module') require files with the given EXTENSION after requiring MODULE (repeatable)
     dryRun: false,      // <boolean> invoke formatters without executing steps
