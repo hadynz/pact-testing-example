@@ -1,7 +1,7 @@
 const chai = require('chai');
 
 const pactProvider = require('./pactProvider');
-const webpackConfig = require('../../webpack/config.integration-tests');
+const webpackConfig = require('../../webpack/webpack.test')();
 
 const WEBPACK_DEV_SERVER_PORT = 3000;
 

@@ -6,8 +6,8 @@
   "author": "Hady Osman",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config ./webpack/config.dev --progress --profile --colors",
-    "start": "webpack-dev-server --config ./webpack/config.dev --progress --profile --colors",
+    "build": "webpack --config ./webpack/webpack.prod.js --progress --profile --colors",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --progress --profile --colors",
     "eslint": "eslint .",
     "jscs": "jscs .",
     "integration-test": "node_modules/.bin/wdio ./tests/infrastructure/wdio.conf.js"
@@ -45,6 +45,7 @@
     "webdriverio": "^4.7.1",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4",
-    "webpack-hot-middleware": "^2.18.0"
+    "webpack-hot-middleware": "^2.18.0",
+    "webpack-merge": "^4.1.0"
   }
 }
