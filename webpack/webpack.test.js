@@ -20,7 +20,7 @@ module.exports = () => {
 
     plugins: [
       new HtmlWebpackPlugin({
-        template: 'server/index.integration-test.html',
+        template: './webpack/static/index.integration-test.html',
         inject: 'body',
         filename: 'index.html'
       }),
