@@ -2,7 +2,7 @@
 const pactProvider = require('../support/pactProvider');
 
 module.exports = function steps() {
-  this.Given(/^I open the movie application page$/, () => {
+  this.Given(/^That a user accesses arrives at our amazing app’s homepage$/, () => {
     pactProvider.addInteraction({
       state: 'querying a movie api service',
       uponReceiving: 'a request to search for a given movie',
