@@ -21,6 +21,14 @@ Using `npm` with:
 npm install
 ```
 
+### Development
+
+```bash
+npm start
+```
+
+This should compile the project and start a webpack server with the hot reload module on `http://localhost:3000`.
+
 ### Tests
 
 Run the integration testsuite by:
