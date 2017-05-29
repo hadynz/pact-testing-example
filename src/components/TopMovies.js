@@ -6,7 +6,7 @@ import Movie from './Movie';
 class TopMovies extends Component {
   constructor(props) {
     super(props);
-    this.state = {loading: true, movies: []};
+    this.state = { loading: true, movies: [] };
   }
 
   componentWillMount() {
@@ -20,7 +20,8 @@ class TopMovies extends Component {
         params: {
           t: name,
           plot: 'short',
-          r: 'json'
+          r: 'json',
+          apikey: '8571c3ab'
         }
       }
       ).then(response => {
@@ -31,7 +32,7 @@ class TopMovies extends Component {
           image: response.data.Poster
         };
         movies.push(data);
-        this.setState({loading: false, movies: movies});
+        this.setState({ loading: false, movies: movies });
       });
     });
   }

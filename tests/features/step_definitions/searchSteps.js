@@ -12,7 +12,8 @@ module.exports = function steps() {
         query: {
           t: 'titanic',
           plot: 'short',
-          r: 'json'
+          r: 'json',
+          apikey: '8571c3ab'
         },
         headers: {
           'Accept': 'application/json, text/plain, */*'

@@ -14,7 +14,8 @@ class SearchMovies extends Component {
       params: {
         t: name,
         plot: 'short',
-        r: 'json'
+        r: 'json',
+        apikey: '8571c3ab'
       }
     }
     ).then(response => {
